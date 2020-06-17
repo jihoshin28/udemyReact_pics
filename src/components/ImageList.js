@@ -5,9 +5,7 @@ const ImageList = props => {
     return(
         <div>
             {
-                props.pics.map(pic => {
-                    <Image picURL = {pic.url.regular}/>
-                })
+                props.pics.map(pic => <Image picURL = {pic.urls.regular}/>)
             }
         </div>
         
