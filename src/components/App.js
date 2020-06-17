@@ -17,13 +17,14 @@ class App extends Component {
         })
 
         this.setState({pics: response.data.results})
+        console.log(this.state.pics)
     }
 
     render(){
         return (
             <div class="ui container" style={{ marginTop: '10px' }}>
                 App
-                <SearchBar onSubmit = {this.onFormSubmit} />
+                <SearchBar onSubmit = {this.onFormSubmit} pics = {this.state.pics} />
                 Found: {this.state.pics.length} images
             </div>
         )
