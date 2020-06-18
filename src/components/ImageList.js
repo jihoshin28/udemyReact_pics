@@ -3,9 +3,9 @@ import Image from './Image'
 
 const ImageList = props => {
     return(
-        <div>
+        <div className = "image-list">
             {
-                props.pics.map(pic => <Image picURL = {pic.urls.regular}/>)
+                props.pics.map(pic => <Image alt = {pic.description} key = {pic.id} picURL = {pic.urls.regular}/>)
             }
         </div>
         

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SearchBar from './SearchBar'
 import unsplash from '../api/unsplash'
 import ImageList from './ImageList'
+import '../App.css'
 
 class App extends Component {
     constructor(){
