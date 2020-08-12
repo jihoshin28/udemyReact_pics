@@ -4,7 +4,7 @@ class Image extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-
+            spans: 0
         }
         this.imageRef = React.createRef()
     }
